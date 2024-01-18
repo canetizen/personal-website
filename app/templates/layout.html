@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+    <link rel="icon" href="{{ url_for('static', filename='icons/logo.jpg') }}" type="image/x-icon">
+    <script type="text/javascript" src="{{ url_for('static', filename='script.js') }}"></script>
+    <title>{% block title %}M. Can Çalışkan{% endblock %}</title>
+</head>
+
+<body>
+    <div>
+        <header>
+            <table id="language_table">
+                <tr>
+                    <td><a href="contact.html"><img src="{{ url_for('static', filename='icons/tr.svg') }}" height="18px"
+                                width="24px" alt="turkish"></a></td>
+                    <td><a href="contact_en.html"><img src="{{ url_for('static', filename='icons/eng.svg') }}"
+                                height="18px" width="24px" alt="english"></a></td>
+                </tr>
+            </table>
+            <h1>Mustafa Can ÇALIŞKAN</h1>
+        </header>
+        <nav>
+            <a href="/">Hakkımda</a>
+            <a href="{{ url_for('academic.academic') }}">Akademik</a>
+            <a href="{{ url_for('contact.contact') }}">Erişim</a>
+        </nav>
+    </div>
+    <section>
+            {% block content %}{% endblock %}
+        <br>
+    </section>
+    <footer>© 2024 M. Can ÇALIŞKAN</footer>
+</body>
+
+</html>
