@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang={{current_language}}>
 
 <head>
     <meta charset="utf-8" />
@@ -15,22 +15,27 @@
         <header>
             <table id="language_table">
                 <tr>
-                    <td><a href="contact.html"><img src="{{ url_for('static', filename='icons/tr.svg') }}" height="18px"
-                                width="24px" alt="turkish"></a></td>
-                    <td><a href="contact_en.html"><img src="{{ url_for('static', filename='icons/eng.svg') }}"
-                                height="18px" width="24px" alt="english"></a></td>
+                    <td><a href="{{ url_for(endpoint, lang='tr') }}"><img
+                                src="{{ url_for('static', filename='icons/tr.svg') }}" height="18px" width="24px"
+                                alt="turkish"></a></td>
+                    <td><a href="{{ url_for(endpoint, lang='en') }}"><img
+                                src="{{ url_for('static', filename='icons/eng.svg') }}" height="18px" width="24px"
+                                alt="english"></a></td>
                 </tr>
             </table>
             <h1>Mustafa Can ÇALIŞKAN</h1>
         </header>
         <nav>
-            <a href="/">Hakkımda</a>
-            <a href="{{ url_for('academic.academic') }}">Akademik</a>
-            <a href="{{ url_for('contact.contact') }}">Erişim</a>
+            <a href="{{ url_for('about', lang=current_language) }}">{{ 'Hakkımda' if current_language == 'tr' else
+                'About Me' }}</a>
+            <a href="{{ url_for('academic.academic', lang=current_language) }}">{{ 'Akademik' if current_language ==
+                'tr' else 'Academic' }}</a>
+            <a href="{{ url_for('contact.contact', lang=current_language) }}">{{ 'Erişim' if current_language == 'tr'
+                else 'Contact' }}</a>
         </nav>
     </div>
     <section>
-            {% block content %}{% endblock %}
+        {% block content %}{% endblock %}
         <br>
     </section>
     <footer>© 2024 M. Can ÇALIŞKAN</footer>

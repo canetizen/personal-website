@@ -1,17 +1,19 @@
-{% set title = context["title"] %}
-
 {% extends "layout.html" %}
-{% block title %}{{title}}{% endblock %}
+
+{% block title %}{{'Erişim' if current_language == 'tr' else 'Contact'}}{% endblock %}
+
 
 {% block content %}
-<h2>Erişim</h2>
+<h2>{{ 'Erişim' if current_language == 'tr' else 'Contact' }}</h2>
 <div id="contact_block">
-    <p><strong>e-posta: </strong><span onmouseover="innerHTML='caliskanmu20@itu.edu.tr'"
-            onmouseout="innerHTML='καλισκανμυκʹΦιτυ.εδυ.τρ'">καλισκανμυκʹΦιτυ.εδυ.τρ</span></p>
-    <br>
+        <p><strong>{{'e-posta' if current_language == 'tr' else 'e-mail'}}: </strong><span
+                        onmouseover="innerHTML='caliskanmu20@itu.edu.tr'"
+                        onmouseout="innerHTML='καλισκανμυκʹΦιτυ.εδυ.τρ'">καλισκανμυκʹΦιτυ.εδυ.τρ</span></p>
+        <br>
         <a href="https://www.linkedin.com/in/mustafa-can-caliskan-b402221bb/">LinkedIn</a>
         <a href="https://github.com/canetizen">GitHub</a>
         <a href="https://www.kaggle.com/canetizen">Kaggle</a>
-        <a href="https://drive.google.com/file/d/1XisgNqRp06mRrdwintS8DTUZyzTsJLQH/view?usp=sharing">Özgeçmiş</a>
+        <a href="https://drive.google.com/file/d/1XisgNqRp06mRrdwintS8DTUZyzTsJLQH/view?usp=sharing">{{'Özgeçmiş' if
+                current_language == 'tr' else 'CV'}}</a>
 </div>
 {% endblock %}

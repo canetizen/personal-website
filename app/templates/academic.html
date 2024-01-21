@@ -1,114 +1,126 @@
-{% set title = context["title"] %}
-
 {% extends "layout.html" %}
-{% block title %}{{title}}{% endblock %}
 
-{% block content %}
+{% block title %}{{'Akademik ' if current_language == 'tr' else 'Academic'}}{% endblock %}
+
 
 {% set course_prefix_turkish = "https://www.sis.itu.edu.tr/TR/ogrenci/lisans/ders-bilgileri/ders-bilgileri.php?subj=" %}
 {% set course_prefix_english =
 "https://www.sis.itu.edu.tr/EN/student/undergraduate/course-information/course-information.php?subj=" %}
 
-<h2>Tamamladığım Anahtar Dersler</h2>
+{% set course_prefix = course_prefix_turkish if current_language == 'tr' else course_prefix_english %}
+
+{% block content %}
+
+<h2>{{ 'Tamamladığım Anahtar Dersler ' if current_language == 'tr' else 'Key Courses' }}</h2>
 <br>
 <div id="course_tables">
     <table>
         <tr>
-            <td> <a href="{{course_prefix_turkish ~ 'BLG&numb=112E'}}">
-                    Ayrık Matematik (BLG 112E)</a></td>
+            <td> <a href="{{course_prefix ~ 'BLG&numb=112E'}}">
+                    {{'Ayrık Matematik' if current_language == 'tr' else 'Discrete Mathematics'}} (BLG 112E)</a></td>
         </tr>
         <tr>
-            <td> <a href="{{course_prefix_turkish ~ 'MAT&numb=175E'}}">
-                    Soyut Matematik (MAT 175E)</a></td>
+            <td> <a href="{{course_prefix ~ 'MAT&numb=175E'}}">
+                    {{'Soyut Matematik' if current_language == 'tr' else 'Abstract Mathematics'}} (MAT 175E)</a></td>
         </tr>
         <tr>
-            <td> <a href="{{course_prefix_turkish ~ 'BLG&numb=231E'}}">
-                    Sayısal Devreler (BLG 231E)</a></td>
+            <td> <a href="{{course_prefix ~ 'BLG&numb=231E'}}">
+                    {{'Sayısal Devreler' if current_language == 'tr' else 'Digital Circuits'}} (BLG 231E)</a></td>
         </tr>
         <tr>
-            <td> <a href="{{course_prefix_turkish ~ 'BLG&numb=202E'}}">
-                    Blg. Müh. Sayısal Yöntemler (BLG 202E)</a></td>
+            <td> <a href="{{course_prefix ~ 'BLG&numb=202E'}}">
+                    {{'Blg. Müh. Sayısal Yöntemler' if current_language == 'tr' else 'Numerical Methods in CE'}} (BLG
+                    202E)</a></td>
         </tr>
         <tr>
-            <td> <a href="{{course_prefix_turkish ~ 'BLG&numb=311E'}}">
-                    Biçimsel Diller ve Otomatlar (BLG 311E)</a></td>
+            <td> <a href="{{course_prefix ~ 'BLG&numb=311E'}}">
+                    {{'Biçimsel Diller ve Otomatlar' if current_language == 'tr' else 'Formal Languages and Automata'}}
+                    (BLG 311E)</a></td>
         </tr>
         <tr>
-            <td> <a href="{{course_prefix_turkish ~ 'BLG&numb=368E'}}">
-                    Yöneylem Araştırması (BLG 368E)</a></td>
+            <td> <a href="{{course_prefix ~ 'BLG&numb=368E'}}">
+                    {{'Yöneylem Araştırması' if current_language == 'tr' else 'Operation Research'}} (BLG 368E)</a></td>
         </tr>
 
         <tr>
-            <td> <a href="{{course_prefix_turkish ~ 'HUK&numb=217'}}">
-                    AR-GE Hukuku (HUK 217)</a></td>
+            <td> <a href="{{course_prefix ~ 'HUK&numb=217'}}">
+                    {{'AR-GE Hukuku' if current_language == 'tr' else 'R&D Law'}} (HUK 217)</a></td>
         </tr>
     </table>
     <table>
         <tr>
-            <td> <a href="{{course_prefix_turkish ~ 'BLG&numb=223E'}}">
-                    Veri Yapıları (BLG 223E)</a></td>
+            <td> <a href="{{course_prefix ~ 'BLG&numb=223E'}}">
+                    {{'Veri Yapıları' if current_language == 'tr' else 'Data Structures'}} (BLG 223E)</a></td>
         </tr>
         <tr>
-            <td> <a href="{{course_prefix_turkish ~ 'BLG&numb=252E'}}">
-                    Nesne Yönelimli Programlama (BLG 252E)</a></td>
+            <td> <a href="{{course_prefix ~ 'BLG&numb=252E'}}">
+                    {{'Nesne Yönelimli Programlama' if current_language == 'tr' else 'Object Oriented Programming'}}
+                    (BLG 252E)</a></td>
         </tr>
         <tr>
-            <td> <a href="{{course_prefix_turkish ~ 'BLG&numb=335E'}}">
-                    Algoritma Analizi 1 (BLG 335E)</a></td>
+            <td> <a href="{{course_prefix ~ 'BLG&numb=335E'}}">
+                    {{'Algoritma Analizi I' if current_language == 'tr' else 'Analysis of Algorithms I'}} (BLG 335E)</a>
+            </td>
         </tr>
         <tr>
-            <td> <a href="{{course_prefix_turkish ~ 'BLG&numb=317E'}}">
-                    Veritabanı Sistemleri (BLG 317E)</a></td>
+            <td> <a href="{{course_prefix ~ 'BLG&numb=317E'}}">
+                    {{'Veritabanı Sistemleri' if current_language == 'tr' else 'Database Systems'}} (BLG 317E)</a></td>
         </tr>
         <tr>
-            <td> <a href="{{course_prefix_turkish ~ 'MAT&numb=281E'}}">
-                    Doğrusal Cebir ve Uygulamaları (MAT 281E)</a></td>
+            <td> <a href="{{course_prefix ~ 'MAT&numb=281E'}}">
+                    {{'Doğrusal Cebir ve Uygulamaları' if current_language == 'tr' else 'Linear Algebra and
+                    Applications'}} (MAT 281E)</a></td>
         </tr>
         <tr>
-            <td> <a href="{{course_prefix_turkish ~ 'MAT&numb=271E'}}">
-                    Olasılık ve İstatistik (MAT 271E)</a></td>
+            <td> <a href="{{course_prefix ~ 'MAT&numb=271E'}}">
+                    {{'Olasılık ve İstatistik' if current_language == 'tr' else 'Probability and Statistics'}} (MAT
+                    271E)</a></td>
         </tr>
         <tr>
-            <td> <a href="{{course_prefix_turkish ~ 'BLG&numb=454E'}}">
-                    Veriden Öğrenme (BLG 454E)</a></td>
+            <td> <a href="{{course_prefix ~ 'BLG&numb=454E'}}">
+                    {{'Veriden Öğrenme' if current_language == 'tr' else 'Learning From Data'}} (BLG 454E)</a></td>
         </tr>
     </table>
 
 </div>
 <br>
-<h2>Kaynaklar</h2>
+<h2>{{'Kaynaklar' if current_language == 'tr' else 'Sources'}}</h2>
 <table id="source_table">
     <tr>
-        <td> <a href="https://kovan.itu.edu.tr/index.php/s/0gdRlBGgaQPr6WK">MAT 281E Ödev Çözümleri (2021-2022 Güz
-                Dönemi)</a></td>
+        <td> <a href="https://kovan.itu.edu.tr/index.php/s/0gdRlBGgaQPr6WK">MAT 281E {{'Ödev Çözümleri (2021-2022 Güz
+                Dönemi)' if current_language == 'tr' else 'Homework Solutions (2021 - 2022) Fall Term'}}</a></td>
     </tr>
     <tr>
-        <td> <a href="https://github.com/canetizen/introduction_to_programming/tree/main/Exam">BLG 102E Sınav Çözümleri
-                (2021-2022 Bahar Dönemi)</a></td>
+        <td> <a href="https://github.com/canetizen/introduction_to_programming/tree/main/Exam">BLG 102E {{'Sınav
+                Çözümleri
+                (2021-2022 Bahar Dönemi)' if current_language == 'tr' else 'Exam Solutions (2021 - 2022) Spring
+                Term'}}</a></td>
     </tr>
     <tr>
-        <td> <a href="https://github.com/canetizen/data_structures">BLG 223E Ödev Çözümleri (2022-2023 Güz Dönemi)</a>
+        <td> <a href="https://github.com/canetizen/data_structures">BLG 223E {{'Ödev Çözümleri (2022-2023 Güz
+                Dönemi)' if current_language == 'tr' else 'Homework Solutions (2022 - 2023) Fall Term'}}</a>
         </td>
     </tr>
     <tr>
-        <td> <a href="https://kovan.itu.edu.tr/index.php/s/Vzsk3CFTD0bYZv4">BLG 231E Ödev Çözümleri (2022-2023 Güz
-                Dönemi)</a></td>
+        <td> <a href="https://kovan.itu.edu.tr/index.php/s/Vzsk3CFTD0bYZv4">BLG 231E {{'Ödev Çözümleri (2022-2023 Güz
+                Dönemi)' if current_language == 'tr' else 'Homework Solutions (2022 - 2023) Fall Term'}}</a></td>
     </tr>
     <tr>
-        <td> <a href="https://kovan.itu.edu.tr/index.php/s/GIpnYINBMqxRZQS">EEF 211E Ödev Çözümleri (2022-2023 Güz
-                Dönemi)</a></td>
+        <td> <a href="https://kovan.itu.edu.tr/index.php/s/GIpnYINBMqxRZQS">EEF 211E {{'Ödev Çözümleri (2022-2023 Güz
+                Dönemi)' if current_language == 'tr' else 'Homework Solutions (2022 - 2023) Fall Term'}}</a></td>
     </tr>
     <tr>
-        <td> <a href="https://kovan.itu.edu.tr/index.php/s/nkpbSSyibsb2Jpz">BLG 368E Ödev Çözümleri (2022-2023 Bahar
-                Dönemi)</a></td>
+        <td> <a href="https://kovan.itu.edu.tr/index.php/s/nkpbSSyibsb2Jpz">BLG 368E {{'Ödev Çözümleri (2022-2023 Bahar
+                Dönemi)' if current_language == 'tr' else 'Homework Solutions (2022 - 2023) Spring Term'}}</a></td>
     </tr>
     <tr>
-        <td> <a href="https://github.com/canetizen/object_oriented_programming">BLG 252E Ödev Çözümleri (2022-2023 Bahar
-                Dönemi)</a></td>
+        <td> <a href="https://github.com/canetizen/object_oriented_programming">BLG 252E {{'Ödev Çözümleri (2022-2023
+                Bahar
+                Dönemi)' if current_language == 'tr' else 'Homework Solutions (2022 - 2023) Spring Term'}}</a></td>
     </tr>
     <tr>
-        <td> <a href="https://github.com/canetizen/numerical_methods">BLG 202E Ödev Çözümleri (2022-2023 Bahar
-                Dönemi)</a>
+        <td> <a href="https://github.com/canetizen/numerical_methods">BLG 202E {{'Ödev Çözümleri (2022-2023 Bahar
+                Dönemi)' if current_language == 'tr' else 'Homework Solutions (2022 - 2023) Spring Term'}}</a>
         </td>
     </tr>
 </table>
