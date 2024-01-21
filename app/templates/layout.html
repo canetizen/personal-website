@@ -11,29 +11,27 @@
 </head>
 
 <body>
-    <div>
-        <header>
-            <table id="language_table">
-                <tr>
-                    <td><a href="{{ url_for(endpoint, lang='tr') }}"><img
-                                src="{{ url_for('static', filename='icons/tr.svg') }}"
-                                alt="turkish"></a></td>
-                    <td><a href="{{ url_for(endpoint, lang='en') }}"><img
-                                src="{{ url_for('static', filename='icons/eng.svg') }}"
-                                alt="english"></a></td>
-                </tr>
-            </table>
-            <h1>Mustafa Can ÇALIŞKAN</h1>
-        </header>
-        <nav>
-            <a href="{{ url_for('about', lang=current_language) }}">{{ 'Hakkımda' if current_language == 'tr' else
-                'About Me' }}</a>
-            <a href="{{ url_for('academic.academic', lang=current_language) }}">{{ 'Akademik' if current_language ==
-                'tr' else 'Academic' }}</a>
-            <a href="{{ url_for('contact.contact', lang=current_language) }}">{{ 'Erişim' if current_language == 'tr'
-                else 'Contact' }}</a>
-        </nav>
-    </div>
+    <header>
+        <table id="language_table">
+            <tr>
+                <td><a href="{{ url_for(endpoint, lang='tr') }}"><img
+                            src="{{ url_for('static', filename='icons/tr.svg') }}"
+                            alt="turkish"></a></td>
+                <td><a href="{{ url_for(endpoint, lang='en') }}"><img
+                            src="{{ url_for('static', filename='icons/eng.svg') }}"
+                            alt="english"></a></td>
+            </tr>
+        </table>
+        <h1>Mustafa Can ÇALIŞKAN</h1>
+    </header>
+    <nav>
+        <a href="{{ url_for('about', lang=current_language) }}">{{ 'Hakkımda' if current_language == 'tr' else
+            'About Me' }}</a>
+        <a href="{{ url_for('academic.academic', lang=current_language) }}">{{ 'Akademik' if current_language ==
+            'tr' else 'Academic' }}</a>
+        <a href="{{ url_for('contact.contact', lang=current_language) }}">{{ 'Erişim' if current_language == 'tr'
+            else 'Contact' }}</a>
+    </nav>
     <section>
         {% block content %}{% endblock %}
         <br>
