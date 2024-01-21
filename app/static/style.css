@@ -98,6 +98,11 @@ a:hover {
 	float: right;
 }
 
+#language_table img {
+    height:auto;
+    width:28px;
+}
+
 #language_table a {
 	margin-left: 5px;
 	margin-right: 5px;
