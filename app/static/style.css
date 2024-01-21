@@ -4,7 +4,7 @@
 	font-family: 'Roboto', sans-serif;
 	color: white;
 	line-height: 1.5em;
-	transform: scale(0.99);
+	transform: scale(0.97);
 }
 
 header {
@@ -44,8 +44,8 @@ section {
 
 footer {
 	text-align: center;
-	margin-top: 1.6em;
-	margin-bottom: 1.6em;
+	margin-top: 1.35em;
+	margin-bottom: 1.35em;
 	font-size: 14px;
 	font-weight: 500;
 }
@@ -55,7 +55,7 @@ nav {
 	display: block;
 	margin-right: auto;
 	margin-left: auto;
-	padding-bottom: 1.5em;
+	padding-bottom: 1.3em;
 	border-bottom-style: solid;
 	border-color: white;
 	border-width: 1px;
@@ -85,6 +85,10 @@ a:hover {
 	margin-right: auto;
 }
 
+#certificates a {
+	font-size: 20px;
+}
+
 #experience {
 	margin-left: auto;
 	margin-right: auto;
@@ -109,6 +113,14 @@ a:hover {
 	display: flex;
 }
 
+#course_tables a{
+	font-size: 20px;
+}
+
+#source_table a{
+    font-size: 20px;
+}
+
 #course_tables table {
 	flex: 1;
 	text-align: center;
@@ -121,4 +133,5 @@ a:hover {
 #contact_block a {
 	margin-left: 5px;
 	margin-right: 5px;
+	font-size: 20px;
 }
