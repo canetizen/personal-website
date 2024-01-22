@@ -11,13 +11,16 @@ header {
 	padding-bottom: 2.5em;
 	padding-left: 8em;
 	padding-right: 7em;
+	margin-left:auto;
+	margin-right:auto;
+	width:70%;
 }
 
 h1 {
 	font-weight: 700;
 	font-size: 26px;
 	font-style: italic;
-	margin-left: 50px;
+	margin-left: 45px;
 }
 
 h2 {
@@ -34,11 +37,14 @@ body {
 }
 
 section {
-	margin: 2em 8em 0em 8em;
+	margin-top:2em;
+	margin-left:auto;
+	margin-right:auto;
 	background-color: rgba(000, 000, 000, 0.5);
 	padding: 1em 2.5em 1em 2.5em;
 	font-size: 16px;
 	border-radius: 15px;
+	width:70%;
 }
 
 footer {
@@ -54,7 +60,7 @@ nav {
 	display: block;
 	margin-right: auto;
 	margin-left: auto;
-	padding-bottom: 1.3em;
+	padding-bottom: 1em;
 	border-bottom-style: solid;
 	border-color: white;
 	border-width: 1px;
@@ -65,9 +71,8 @@ nav a {
 	margin-left: 1em;
 	margin-right: 1em;
 	font-weight: 600;
-	font-size: 24px;
+	font-size: 22px;
 }
-
 
 
 a {
@@ -85,7 +90,7 @@ a:hover {
 }
 
 #certificates a {
-	font-size: 18px;
+	font-size: 17px;
 }
 
 #experience {
@@ -100,7 +105,7 @@ a:hover {
 
 #language_table img {
     height:auto;
-    width:23px;
+    width:22px;
 }
 
 #language_table a {
@@ -119,11 +124,11 @@ a:hover {
 }
 
 #course_tables a{
-	font-size: 18px;
+	font-size: 17px;
 }
 
 #source_table a{
-    font-size: 18px;
+    font-size: 17px;
 }
 
 #course_tables table {
@@ -138,5 +143,5 @@ a:hover {
 #contact_block a {
 	margin-left: 5px;
 	margin-right: 5px;
-	font-size: 18px;
+	font-size: 19px;
 }
