@@ -13,7 +13,7 @@ app.register_blueprint(contactBP)
 def index():
     return redirect(url_for('about', lang='tr'))
 
-@app.route('/<lang>')
+@app.route('/<lang>/about')
 def about(lang):
     return render_template('index.html', current_language=lang, endpoint="about")
 
