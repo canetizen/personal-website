@@ -91,13 +91,14 @@ a:hover {
 	margin-right: auto;
 }
 
-#certificates a {
-	font-size: 17px;
+#experience, #education {
+	margin-left: 5%;
+	margin-right: 5%;
 }
 
-#experience {
-	margin-left: auto;
-	margin-right: auto;
+#education td {
+	padding-top: 5px;
+	padding-bottom: 5px;
 }
 
 #language_table {
