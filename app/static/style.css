@@ -33,6 +33,8 @@ body {
 	background-image: url('background.jpeg');
 	background-size: cover;
 	background-attachment: fixed;
+	margin: 0 auto;
+	width: 1500px;
 }
 
 section {
