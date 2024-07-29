@@ -1,13 +1,20 @@
-from flask import render_template
-from flask import Flask, redirect, url_for
-from app.Controller.academic import academicBP
-from app.Controller.contact import contactBP
+from flask import Flask, render_template, redirect, url_for, json, abort
+import datetime
+import pytz
 
+app = Flask('canetizen', template_folder='app/templates', static_folder='app/static')
 
-app = Flask('canetizen', template_folder=f'app/templates', static_folder=f'app/static')
+def load_translations(filename):
+    with open(filename, 'r', encoding='utf-8') as file:
+        return json.load(file)
 
-app.register_blueprint(academicBP)
-app.register_blueprint(contactBP)
+layout_translations = load_translations('translations/layout_tran.json')
+index_translations = load_translations('translations/index_tran.json')
+academic_translations = load_translations('translations/academic_tran.json')
+contact_translations = load_translations('translations/contact_tran.json')
+
+istanbul_tz = pytz.timezone('Europe/Istanbul')
+last_updated = datetime.datetime.now(istanbul_tz).strftime("%d %B %Y, %I:%M %p %Z")
 
 @app.route('/')
 def index():
@@ -15,8 +22,25 @@ def index():
 
 @app.route('/<lang>/about')
 def about(lang):
-    return render_template('index.html', current_language=lang, endpoint="about")
+    if lang not in ['tr', 'en']:
+        abort(404)
+    return render_template('index.html', translations={**layout_translations, **index_translations}, current_language=lang, endpoint='about', last_updated=last_updated)
+
+@app.route('/<lang>/academic', methods=['GET'])
+def academic(lang):
+    if lang not in ['tr', 'en']:
+        abort(404)
+    return render_template('academic.html', translations={**layout_translations, **academic_translations}, current_language=lang, endpoint='academic', last_updated=last_updated)
+
+@app.route('/<lang>/contact', methods=['GET'])
+def contact(lang):
+    if lang not in ['tr', 'en']:
+        abort(404)
+    return render_template('contact.html', translations={**layout_translations, **contact_translations}, current_language=lang, endpoint='contact', last_updated=last_updated)
+
+@app.errorhandler(404)
+def page_not_found(e):
+    return "404 - Page Not Found", 404
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', debug=True, port=5001)
-    #app.run()
+    app.run(host='0.0.0.0', port=5001)

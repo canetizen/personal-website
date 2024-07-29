@@ -1,0 +1,78 @@
+{
+    "key_courses": {
+        "tr": "Tamamladığım Anahtar Dersler",
+        "en": "Key Courses I Have Completed"
+    },
+    "sources": {
+        "tr": "Kaynaklar",
+        "en": "Sources"
+    },
+    "numerical_methods": {
+        "tr": "Blg. Müh. Sayısal Yöntemler",
+        "en": "Numerical Methods in CE"
+    },
+    "operation_research": {
+        "tr": "Yöneylem Araştırması",
+        "en": "Operations Research"
+    },
+    "data_structures": {
+        "tr": "Veri Yapıları",
+        "en": "Data Structures"
+    },
+    "operating_systems": {
+        "tr": "Bilgisayar İşletim Sistemleri",
+        "en": "Computer Operating Systems"
+    },
+    "comporg": {
+        "tr": "Bilgisayar Organizasyonu",
+        "en": "Computer Organization"
+    },
+    "signal": {
+        "tr": "Bilgisayar Mühendisleri için Sinyal ve Sistemler",
+        "en": "Signal and Systems for Computer Engineers"
+    },
+    "oop": {
+        "tr": "Nesne Yönelimli Programlama",
+        "en": "Object Oriented Programming"
+    },
+    "algo1": {
+        "tr": "Algoritma Analizi I",
+        "en": "Analysis of Algorithms I"
+    },
+    "algo2": {
+        "tr": "Algoritma Analizi II",
+        "en": "Analysis of Algorithms II"
+    },
+    "database_systems": {
+        "tr": "Veri Tabanı Sistemleri",
+        "en": "Database Systems"
+    },
+    "linear_algebra": {
+        "tr": "Doğrusal Cebir ve Uygulamaları",
+        "en": "Linear Algebra and Applications"
+    },
+    "probability_statistics": {
+        "tr": "Olasılık ve İstatistik",
+        "en": "Probability and Statistics"
+    },
+    "learning_from_data": {
+        "tr": "Veriden Öğrenme",
+        "en": "Learning From Data"
+    },
+    "r&d_law": {
+        "tr": "AR-GE Hukuku",
+        "en": "R&D Law"
+    },
+    "all_course_materials": {
+        "tr": "Tüm Ders Materyalleri <strong><em>(2021 - 2025)</em></strong>",
+        "en": "All Course Materials <strong><em>(2021 - 2025)</em></strong>"
+    },
+    "homework_exam_solutions_source_codes": {
+        "tr": "Materyallerin Kaynak Kodları <strong><em>(2021 - 2025)</em></strong>",
+        "en": "Source Codes for Course Materials <strong><em>(2021 - 2025)</em></strong>"
+    },
+    "blg_317e_database_systems_term_project": {
+        "tr": "BLG 317E Veri Tabanı Sistemleri Dönem Projesi <strong><em>(2023 Güz Dönemi)</em></strong>",
+        "en": "BLG 317E Database Systems Term Project <strong><em>(2023 Fall Term)</em></strong>"
+    }
+}

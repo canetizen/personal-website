@@ -1,19 +1,17 @@
 {% extends "layout.html" %}
 
-{% block title %}{{'Erişim' if current_language == 'tr' else 'Contact'}}{% endblock %}
-
+{% block title %}{{ translations['contact'][current_language] }}{% endblock %}
 
 {% block content %}
-<h2>{{ 'Erişim' if current_language == 'tr' else 'Contact' }}</h2>
+<h2>{{ translations['contact'][current_language] }}</h2>
 <div id="contact_block">
-        <p><strong>{{'e-posta' if current_language == 'tr' else 'e-mail'}}: </strong><span
-                        onmouseover="innerHTML='caliskanmu20@itu.edu.tr'"
-                        onmouseout="innerHTML='καλισκανμυκʹΦιτυ.εδυ.τρ'">καλισκανμυκʹΦιτυ.εδυ.τρ</span></p>
+        <p><strong>{{ translations['email'][current_language] }}: </strong><span
+                        onmouseover="innerHTML='mcancaliskan@outlook.com'"
+                        onmouseout="innerHTML='μκανκαλισκαν@ουτλοοκ.κομ'">καλισκανμυκʹΦιτυ.εδυ.τρ</span></p>
         <br>
-        <a href="https://www.linkedin.com/in/mustafa-can-caliskan/">LinkedIn</a>
-        <a href="https://github.com/canetizen">GitHub</a>
-        <a href="https://www.kaggle.com/canetizen">Kaggle</a>
-        <a href="https://drive.google.com/file/d/1XisgNqRp06mRrdwintS8DTUZyzTsJLQH/view?usp=sharing">{{'Özgeçmiş' if
-                current_language == 'tr' else 'CV'}}</a>
+        <a href="https://www.linkedin.com/in/mustafa-can-caliskan/">{{ translations['linkedin'][current_language] }}</a>
+        <a href="https://github.com/canetizen">{{ translations['github'][current_language] }}</a>
+        <a href="https://www.kaggle.com/canetizen">{{ translations['kaggle'][current_language] }}</a>
+        <a href="https://kovan.itu.edu.tr/index.php/s/ff9Xg3sqSwyFGTJ">{{ translations['cv'][current_language] }}</a>
 </div>
 {% endblock %}

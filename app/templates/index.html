@@ -1,136 +1,81 @@
 {% extends "layout.html" %}
 
-{% block title %}{{'Hakkımda ' if current_language == 'tr' else 'About Me'}}{% endblock %}
+{% block title %}{{ translations['about_me'][current_language] }}{% endblock %}
 
 {% block content %}
-<h2>{{ 'Hakkımda' if current_language == 'tr' else 'About Me' }}</h2>
-<p>&emsp;&emsp;
+<h2>{{ translations['about_me'][current_language] }}</h2>
+<p>
     {% if current_language == "tr" %}
-    16 Eylül 2001 tarihinde Tokat'ta doğdum. Lise eğitimimi 2020 yılında PEMA Koleji'nde tamamladıktan sonra İstanbul
-    Teknik Üniversitesi Bilgisayar Mühendisliği bölümünde öğrenim hayatıma başladım. Şu anda 3. sınıf öğrencisi olarak
-    öğrenimime devam etmekteyim. Öneri sistemleri, özellik mühendisliği gibi makine öğrenmesinin ilgili konseptlerine
-    ilgim doğrultusunda araştırmalar yapıp kendimi geliştirmekteyim. Temmuz 2023'te yönetim kurulu başkanlığına
-    seçildiğim <a href="https://superbilg.itu.edu.tr/">İTÜ Süper Bilgisayar Kulübü</a>'nde, süper bilgisayarlar, yüksek
-    başarımlı hesaplama ve paralel programlama gibi teknik konuları lisans düzeyine yayma ve bu konulardaki bilgi ve
-    kültürü arttırma amaçları doğrultusunda kulüp üyelerimizle birlikte çalışmalar yürütmeye devam ediyorum.
-
+    {{ translations['about_me_content'][current_language]|safe }}
     {% else %}
-    I was born on September 16, 2001, in Tokat. After completing my high school education at PEMA College in 2020, I
-    began my academic journey in the Computer Engineering department at Istanbul Technical University. Currently, I am a
-    third-year student continuing my education. Aligned with my interests, I engage
-    in research to enhance my understanding of machine learning concepts, particularly in recommendation systems and
-    feature engineering. In July 2023, I was elected as the
-    chairman of the board of directors at <a href="https://superbilg.itu.edu.tr/">ITU Supercomputer Club</a>. In line with the club's goals of disseminating
-    technical topics such as supercomputers, high-performance computing, and parallel programming to an undergraduate
-    level and increasing knowledge and culture in these areas, I continue to work with club members.
+    {{ translations['about_me_content'][current_language]|safe }}
     {% endif %}
 </p>
-</br>
-<h2>{{ 'Eğitim' if current_language == 'tr' else 'Education' }}</h2>
+<br>
+<h2>{{ translations['education'][current_language] }}</h2>
 <table id="education">
-    {% if current_language == "tr" %}
     <tr>
-        <td>➥ İstanbul Teknik Üniversitesi Bilgisayar Mühendisliği Lisans Programı <strong><em>(2020 - 2025)</em></strong></td>
+        <td>➥ {{ translations['itu_bsce'][current_language]|safe }}</td>
     </tr>
     <tr>
-        <td>➥ Pema Koleji <strong><em>(2016 - 2020)</em></strong></td>
+        <td>➥ {{ translations['pema_college'][current_language]|safe }}</td>
     </tr>
-    {% else %}
-    <tr>
-        <td>➥ Istanbul Technical University, Bachelor of Science (BSc) in Computer Engineering <strong><em>(2020 - 2025)</em></strong></td>
-    </tr>
-    <tr>
-        <td>➥ Pema College <strong><em>(2016 - 2020)</em></strong></td>
-    </tr>
-    {% endif %}
 </table>
-</br>
-<h2>{{ 'Deneyim' if current_language == 'tr' else 'Experience' }}</h2>
+<br>
+<h2>{{ translations['experience'][current_language] }}</h2>
 <table id="experience">
-    {% if current_language == "tr" %}
     <tr>
-        <td>➥ ASELSAN Konya Yazılım Tasarım Mühendis Stajyeri <strong><em>(Ağustos 2023 -
-                    Eylül 2023)</em></td>
+        <td>➥ {{ translations['tubitak_intern'][current_language]|safe }}</td>
     </tr>
     <tr>
         <td></br></td>
     </tr>
     <tr>
-        <td>➥ İTÜ Süper Bilgisayar Kulübü </td>
-    </tr>
-    <tr>
-        <td>&emsp;&emsp;• Yönetim Kurulu Başkanı <strong><em>(Temmuz 2023 - Devam Ediyor)</em></strong></td>
-    </tr>
-    <tr>
-        <td>&emsp;&emsp;• Denetim Kurulu Üyesi <strong><em>(Ekim 2022 - Temmuz
-                    2023)</em></strong></td>
-    </tr>
-    <tr>
-        <td>&emsp;&emsp;• Kurucular Kurulu Üyesi <strong><em>(Haziran 2022 - Ekim
-                    2022)</em></strong></td>
+        <td>➥ {{ translations['aselsan_intern'][current_language]|safe }}</td>
     </tr>
     <tr>
         <td></br></td>
     </tr>
     <tr>
-        <td>➥ BAYÖYO 2023: Bilim Akademisi - Sabancı Üniversitesi - İstanbul Teknik
-            Üniversitesi
-            Yapay Öğrenme Yaz Okulu Organizasyon Komite Üyesi <strong><em>(Haziran 2023)</em></strong></td>
-    </tr>
-    {% else %}
-    <tr>
-        <td>➥ ASELSAN Konya Software Design Engineer Intern <strong><em>(August 2023 -
-                    September 2023)</em></td>
+        <td>➥ {{ translations['itu_supercomputer_club'][current_language]|safe }}</td>
     </tr>
     <tr>
-        <td></br></td>
+        <td>&emsp;&emsp;• {{ translations['chairperson'][current_language]|safe }}</td>
     </tr>
     <tr>
-        <td>➥ ITU Supercomputer Club </td>
+        <td>&emsp;&emsp;• {{ translations['supervisory_board_member'][current_language]|safe }}</td>
     </tr>
     <tr>
-        <td>&emsp;&emsp;• Chairperson <strong><em>(July 2023 - Present)</em></strong></td>
-    </tr>
-    <tr>
-        <td>&emsp;&emsp;• Supervisory Board Member <strong><em>(November 2022 - July
-                    2023)</em></strong></td>
-    </tr>
-    <tr>
-        <td>&emsp;&emsp;• Founding Member <strong><em>(June 2022 - November
-                    2022)</em></strong></td>
+        <td>&emsp;&emsp;• {{ translations['founding_member'][current_language]|safe }}</td>
     </tr>
     <tr>
         <td></br></td>
     </tr>
     <tr>
-        <td>➥ BAYOYO 2023: Bilim Akademisi - Sabanci University - Istanbul Technical University
-            Machine Learning Summer School Organization Commitee Member <strong><em>(June 2023)</em></strong></td>
+        <td>➥ {{ translations['bayoyo_summer_school'][current_language]|safe }}</td>
     </tr>
-    {% endif %}
 </table>
-</br>
-<h2>{{ 'Sertifikalar' if current_language == 'tr' else 'Certificates' }}</h2>
+<br>
+<h2>{{ translations['certificates'][current_language] }}</h2>
 <table id="certificates">
     <tr>
-        <th><a href="https://www.coursera.org/account/accomplishments/verify/DSQGQSRLM8T8">{{ 'Gözetimli Yapay Öğrenme: Regresyon ve Sınıflandırma - DeepLearning.AI (Coursera.org aracılığıyla)' if current_language == 'tr' else 'Supervised Machine Learning: Regression and Classification  - DeepLearning.AI (via
-                Coursera.org)' }}</a></th>
+        <th><a href="https://www.coursera.org/account/accomplishments/specialization/NZXU5KNPFZB3">{{ translations['machine_learning'][current_language] }}</a></th>
+    </tr>
+    <tr>
+        <th><a href="https://www.coursera.org/account/accomplishments/verify/2GQM5E68A9RY">{{ translations['linux_for_developers'][current_language] }}</a></th>
+    </tr>
+    <tr>
+        <th><a href="https://learning.miuul.com/certificates/gs0vpbfjp9">{{ translations['feature_engineering_miuul'][current_language] }}</a></th>
+    </tr>
+    <tr>
+        <th><a href="https://coursera.org/share/a9b6311dd1287c969255160c37be2ee7">{{ translations['agile_project_management_google'][current_language] }}</a></th>
+    </tr>
+    <tr>
+        <th><a href="https://kovan.itu.edu.tr/index.php/s/ZDlH2NMECvuf3Xx">{{ translations['bayoyo_machine_learning_summer_school'][current_language] }}</a></th>
     </tr>
 
     <tr>
-        <th><a href="https://learning.miuul.com/certificates/gs0vpbfjp9">{{ 'Özellik Mühendisliği - Miuul' if current_language == 'tr' else 'Feature Engineering - Miuul' }}</a></th>
-    </tr>
-    <tr>
-        <th><a href="https://coursera.org/share/a9b6311dd1287c969255160c37be2ee7">{{ 'Agile Proje Yönetimi -
-                Google (Coursera.org aracılığıyla)' if current_language == 'tr' else 'Agile Project Management - Google
-                (via
-                Coursera.org)' }}</a></th>
-    </tr>
-    <tr>
-        <th><a href="https://drive.google.com/file/d/1uWh_gc6HWAu1IO8wCBEhRHONKEP0ai5_/view">{{ 'BAYÖYO 2023:
-                Bilim Akademisi - Sabancı Üniversitesi - İstanbul Teknik Üniversitesi
-                Yapay Öğrenme Yaz Okulu' if current_language == 'tr' else
-                'BAYOYO 2023: Bilim Akademisi - Sabanci University - Istanbul Technical University
-                Machine Learning Summer School' }}</a></th>
+        <th><a href="https://www.coursera.org/account/accomplishments/verify/PNW6APL46K87">{{ translations['parallel_programming_in_java'][current_language] }}</a></th>
     </tr>
 </table>
 {% endblock %}

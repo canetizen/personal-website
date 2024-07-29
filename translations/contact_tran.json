@@ -1,0 +1,22 @@
+{
+    "email": {
+        "tr": "e-posta",
+        "en": "e-mail"
+    },
+    "linkedin": {
+        "tr": "LinkedIn",
+        "en": "LinkedIn"
+    },
+    "github": {
+        "tr": "GitHub",
+        "en": "GitHub"
+    },
+    "kaggle": {
+        "tr": "Kaggle",
+        "en": "Kaggle"
+    },
+    "cv": {
+        "tr": "Özgeçmiş",
+        "en": "CV"
+    }
+}
