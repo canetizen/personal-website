@@ -8,71 +8,71 @@
         "en": "Sources"
     },
     "numerical_methods": {
-        "tr": "Bilgisayar Mühendisliğinde Sayısal Yöntemler",
-        "en": "Numerical Methods in CE"
+        "tr": "Bilgisayar Mühendisliğinde Sayısal Yöntemler (BLG 202E)",
+        "en": "Numerical Methods in CE (BLG 202E)"
     },
     "operation_research": {
-        "tr": "Yöneylem Araştırması",
-        "en": "Operations Research"
+        "tr": "Yöneylem Araştırması (BLG 368E)",
+        "en": "Operations Research (BLG 368E)"
     },
     "data_structures": {
-        "tr": "Veri Yapıları",
-        "en": "Data Structures"
+        "tr": "Veri Yapıları (BLG 223E)",
+        "en": "Data Structures (BLG 223E)"
     },
     "operating_systems": {
-        "tr": "Bilgisayar İşletim Sistemleri",
-        "en": "Computer Operating Systems"
+        "tr": "Bilgisayar İşletim Sistemleri (BLG 312E)",
+        "en": "Computer Operating Systems (BLG 312E)"
     },
     "comporg": {
-        "tr": "Bilgisayar Organizasyonu",
-        "en": "Computer Organization"
+        "tr": "Bilgisayar Organizasyonu (BLG 222E)",
+        "en": "Computer Organization (BLG 222E)"
     },
     "signal": {
-        "tr": "Bilgisayar Mühendisleri için Sinyal ve Sistemler",
-        "en": "Signal and Systems for Computer Engineers"
+        "tr": "Bilgisayar Mühendisleri için Sinyal ve Sistemler (BLG 354E)",
+        "en": "Signal and Systems for Computer Engineers (BLG 354E)"
     },
     "oop": {
-        "tr": "Nesne Yönelimli Programlama",
-        "en": "Object Oriented Programming"
+        "tr": "Nesne Yönelimli Programlama (BLG 252E)",
+        "en": "Object Oriented Programming (BLG 252E)"
     },
     "algo1": {
-        "tr": "Algoritma Analizi I",
-        "en": "Analysis of Algorithms I"
+        "tr": "Algoritma Analizi I (BLG 335E)",
+        "en": "Analysis of Algorithms I (BLG 335E)"
     },
     "algo2": {
-        "tr": "Algoritma Analizi II",
-        "en": "Analysis of Algorithms II"
+        "tr": "Algoritma Analizi II (BLG 336E)",
+        "en": "Analysis of Algorithms II (BLG 336E)"
     },
     "database_systems": {
-        "tr": "Veri Tabanı Sistemleri",
-        "en": "Database Systems"
+        "tr": "Veri Tabanı Sistemleri (BLG 317E)",
+        "en": "Database Systems (BLG 317E)"
     },
     "linear_algebra": {
-        "tr": "Doğrusal Cebir ve Uygulamaları",
-        "en": "Linear Algebra and Applications"
+        "tr": "Doğrusal Cebir ve Uygulamaları (MAT 281E)",
+        "en": "Linear Algebra and Applications (MAT 281E)"
     },
     "probability_statistics": {
-        "tr": "Olasılık ve İstatistik",
-        "en": "Probability and Statistics"
+        "tr": "Olasılık ve İstatistik (MAT 271E)",
+        "en": "Probability and Statistics (MAT 271E)"
     },
     "learning_from_data": {
-        "tr": "Veriden Öğrenme",
-        "en": "Learning From Data"
+        "tr": "Veriden Öğrenme (BLG 454E)",
+        "en": "Learning From Data (BLG 454E)"
     },
     "r&d_law": {
-        "tr": "AR-GE Hukuku",
-        "en": "R&D Law"
+        "tr": "AR-GE Hukuku (HUK 217)",
+        "en": "R&D Law (HUK 217)"
     },
     "all_course_materials": {
-        "tr": "Tüm Ders Materyalleri <strong><em>(2021 - 2025)</em></strong>",
-        "en": "All Course Materials <strong><em>(2021 - 2025)</em></strong>"
+        "tr": "Tüm Ders Materyalleri (2021 - 2025)",
+        "en": "All Course Materials (2021 - 2025)"
     },
     "homework_exam_solutions_source_codes": {
-        "tr": "Materyallerin Kaynak Kodları <strong><em>(2021 - 2025)</em></strong>",
-        "en": "Source Codes for Course Materials <strong><em>(2021 - 2025)</em></strong>"
+        "tr": "Materyallerin Kaynak Kodları (2021 - 2025)",
+        "en": "Source Codes for Course Materials (2021 - 2025)"
     },
     "blg_317e_database_systems_term_project": {
-        "tr": "BLG 317E Veri Tabanı Sistemleri Dönem Projesi <strong><em>(2023 Güz Dönemi)</em></strong>",
-        "en": "BLG 317E Database Systems Term Project <strong><em>(2023 Fall Term)</em></strong>"
+        "tr": "BLG 317E Veri Tabanı Sistemleri Dönem Projesi (2023 Güz Dönemi)",
+        "en": "BLG 317E Database Systems Term Project (2023 Fall Term)"
     }
 }
