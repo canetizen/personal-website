@@ -13,8 +13,7 @@ index_translations = load_translations('translations/index_tran.json')
 academic_translations = load_translations('translations/academic_tran.json')
 contact_translations = load_translations('translations/contact_tran.json')
 
-istanbul_tz = pytz.timezone('Europe/Istanbul')
-last_updated = datetime.datetime.now(istanbul_tz).strftime("%d %B %Y, %I:%M %p %Z")
+last_updated = "21 August 2024, 10:03 PM +03"
 
 @app.route('/')
 def index():
