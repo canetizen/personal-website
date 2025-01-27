@@ -1,6 +1,4 @@
 from flask import Flask, render_template, redirect, url_for, json, abort
-import datetime
-import pytz
 
 app = Flask('canetizen', template_folder='app/templates', static_folder='app/static')
 
@@ -13,7 +11,7 @@ index_translations = load_translations('translations/index_tran.json')
 academic_translations = load_translations('translations/academic_tran.json')
 contact_translations = load_translations('translations/contact_tran.json')
 
-last_updated = "21 August 2024, 10:03 PM +03"
+last_updated = "27 January 2025, 11:00 AM +03"
 
 @app.route('/')
 def index():

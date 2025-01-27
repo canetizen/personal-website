@@ -31,6 +31,7 @@ h2 {
 
 body {
 	background-image: url('background_compressed.jpg');
+
 	background-size: cover;
 	background-attachment: fixed;
 	margin: 0 auto;
@@ -42,7 +43,7 @@ section {
 	margin-left: auto;
 	margin-right: auto;
 	background-color: rgba(000, 000, 000, 0.5);
-	padding: 1em 2.5em 1em 2.5em;
+	padding: 1em 2.5em 1.5em 2.5em;
 	font-size: 16px;
 	border-radius: 15px;
 	width: 70%;
@@ -88,20 +89,9 @@ a:hover {
 	color: #888888;
 }
 
-#certificates {
-	margin-left: auto;
-	margin-right: auto;
-}
-
-#experience,
-#education {
+#left_aligned_table {
 	margin-left: 5%;
 	margin-right: 5%;
-}
-
-#education td {
-	padding-top: 7px;
-	padding-bottom: 7px;
 }
 
 #language_table {
@@ -119,8 +109,7 @@ a:hover {
 	margin-right: 5px;
 }
 
-
-#source_table {
+#center_table {
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
@@ -131,10 +120,6 @@ a:hover {
 }
 
 #course_tables a {
-	font-size: 17px;
-}
-
-#source_table a {
 	font-size: 17px;
 }
 

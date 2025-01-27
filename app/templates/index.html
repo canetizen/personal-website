@@ -11,9 +11,8 @@
     {{ translations['about_me_content'][current_language]|safe }}
     {% endif %}
 </p>
-<br>
 <h2>{{ translations['education'][current_language] }}</h2>
-<table id="education">
+<table id="left_aligned_table">
     <tr>
         <td>➥ {{ translations['itu_bsce'][current_language]|safe }}</td>
     </tr>
@@ -21,11 +20,16 @@
         <td>➥ {{ translations['pema_college'][current_language]|safe }}</td>
     </tr>
 </table>
-<br>
 <h2>{{ translations['experience'][current_language] }}</h2>
-<table id="experience">
+<table id="left_aligned_table">
     <tr>
-        <td>➥ {{ translations['havelsan_intern'][current_language]|safe }}</td>
+        <td>➥ HAVELSAN</td>
+    </tr>
+    <tr>
+        <td>&emsp;&emsp;• {{ translations['havelsan_candidate'][current_language]|safe }}</td>
+    </tr>
+    <tr>
+        <td>&emsp;&emsp;• {{ translations['havelsan_intern'][current_language]|safe }}</td>
     </tr>
     <tr>
         <td></br></td>
@@ -55,27 +59,23 @@
         <td>➥ {{ translations['bayoyo_summer_school'][current_language]|safe }}</td>
     </tr>
 </table>
-<br>
 <h2>{{ translations['certificates'][current_language] }}</h2>
-<table id="certificates">
+<table id="center_table">
     <tr>
-        <th><a href="https://www.coursera.org/account/accomplishments/specialization/NZXU5KNPFZB3">{{ translations['machine_learning'][current_language] }}</a></th>
+        <th><a href="https://www.coursera.org/account/accomplishments/specialization/NZXU5KNPFZB3">{{
+                translations['machine_learning'][current_language] }}</a></th>
     </tr>
     <tr>
-        <th><a href="https://www.coursera.org/account/accomplishments/verify/2GQM5E68A9RY">{{ translations['linux_for_developers'][current_language] }}</a></th>
+        <th><a href="https://www.coursera.org/account/accomplishments/verify/2GQM5E68A9RY">{{
+                translations['linux_for_developers'][current_language] }}</a></th>
     </tr>
     <tr>
-        <th><a href="https://learning.miuul.com/certificates/gs0vpbfjp9">{{ translations['feature_engineering_miuul'][current_language] }}</a></th>
+        <th><a href="https://coursera.org/share/a9b6311dd1287c969255160c37be2ee7">{{
+                translations['agile_project_management_google'][current_language] }}</a></th>
     </tr>
     <tr>
-        <th><a href="https://coursera.org/share/a9b6311dd1287c969255160c37be2ee7">{{ translations['agile_project_management_google'][current_language] }}</a></th>
-    </tr>
-    <tr>
-        <th><a href="https://kovan.itu.edu.tr/index.php/s/ZDlH2NMECvuf3Xx">{{ translations['bayoyo_machine_learning_summer_school'][current_language] }}</a></th>
-    </tr>
-
-    <tr>
-        <th><a href="https://www.coursera.org/account/accomplishments/verify/PNW6APL46K87">{{ translations['parallel_programming_in_java'][current_language] }}</a></th>
+        <th><a href="https://www.coursera.org/account/accomplishments/verify/PNW6APL46K87">{{
+                translations['parallel_programming_in_java'][current_language] }}</a></th>
     </tr>
 </table>
 {% endblock %}

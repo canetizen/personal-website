@@ -1,7 +1,7 @@
 {
     "about_me_content": {
-        "tr": "<p style=\"text-indent: 45px;\">16 Eylül 2001 tarihinde Tokat'ta doğdum. Lise eğitimimi 2020 yılında PEMA Koleji'nde tamamladıktan sonra İstanbul Teknik Üniversitesi Bilgisayar Mühendisliği bölümünde öğrenim hayatıma başladım. Şu anda 4. sınıf öğrencisi olarak öğrenimime devam etmekteyim. Makine öğrenmesinin çeşitli konseptlerine ilgim doğrultusunda araştırmalar yapıp kendimi geliştirmekteyim. Temmuz 2023'te yönetim kurulu başkanlığına seçildiğim ve şu an üye olarak devam ettiğim <a href=\"https://superbilg.itu.edu.tr/\">İTÜ Süper Bilgisayar Kulübü</a>'nde, süper bilgisayarlar, yüksek başarımlı hesaplama ve paralel programlama gibi teknik konuları lisans düzeyine yayma ve bu konulardaki bilgi ve kültürü arttırma amaçları doğrultusunda kulüp üyelerimizle birlikte çalışmalar yürütmeye devam ediyorum.</p>",
-        "en": "<p style=\"text-indent: 45px;\">I was born on September 16, 2001, in Tokat. After completing my high school education at PEMA College in 2020, I began my academic journey in the Computer Engineering department at Istanbul Technical University. Currently, I am a fourth-year student continuing my education. Aligned with my interests, I engage in research to enhance my understanding of various machine learning concepts. In July 2023, I was elected as the chairman of the board of directors and currently continue as a member at <a href=\"https://superbilg.itu.edu.tr/\">ITU Supercomputer Club</a>. In line with the club's goals of disseminating technical topics such as supercomputers, high-performance computing, and parallel programming to an undergraduate level and increasing knowledge and culture in these areas, I continue to collaborate with club members.</p>"
+        "tr": "<p style=\"text-indent: 45px;\">16 Eylül 2001 tarihinde Tokat'ta doğdum. Lise eğitimimi 2020 yılında PEMA Koleji'nde tamamladıktan sonra İstanbul Teknik Üniversitesi Bilgisayar Mühendisliği bölümünde öğrenim hayatıma başladım. Şu anda 4. sınıf öğrencisi olarak öğrenimime devam etmekte olup, özellikle dağıtık sistemler, gerçek zamanlı sistemler ve ilgili teknolojiler üzerine araştırmalar yaparak kendimi geliştirmekteyim. Aynı zamanda HAVELSAN'da Aday Mühendis olarak çalışmaya devam ediyorum.</p>",
+        "en": "<p style=\"text-indent: 45px;\">I was born in Tokat on September 16, 2001. After completing my high school education at PEMA College in 2020, I began my academic journey in the Computer Engineering department at Istanbul Technical University. Currently, I am continuing my education as a senior student while focusing on developing my expertise through research in distributed systems, real-time systems, and related technologies. I am also working as an Candidate Engineer at HAVELSAN.</p>"
     },
     "education": {
         "tr": "Eğitim",
@@ -23,9 +23,13 @@
         "tr": "Pema Koleji <strong><em>(2016 - 2020)</em></strong>",
         "en": "Pema College <strong><em>(2016 - 2020)</em></strong>"
     },
+    "havelsan_candidate": {
+        "tr": "Aday Mühendis <strong><em>(Ekim 2024 - Devam Ediyor)</em></strong>",
+        "en": "Candidate Engineer <strong><em>(November 2024 - Present)</em></strong>"
+    },
     "havelsan_intern": {
-        "tr": "HAVELSAN Yazılım Mühendis Stajyeri <strong><em>(Ağustos 2024 - Eylül 2024)</em></strong>",
-        "en": "HAVELSAN Software Engineer Intern <strong><em>(August 2024 - September 2024)</em></strong>"
+        "tr": "Yazılım Mühendis Stajyeri <strong><em>(Ağustos 2024 - Eylül 2024)</em></strong>",
+        "en": "Software Engineer Intern <strong><em>(August 2024 - September 2024)</em></strong>"
     },
     "aselsan_intern": {
         "tr": "ASELSAN Konya Yazılım Tasarım Mühendis Stajyeri <strong><em>(Ağustos 2023 - Eylül 2023)</em></strong>",
@@ -52,27 +56,19 @@
         "en": "BAYOYO 2023: Bilim Akademisi - Sabanci University - Istanbul Technical University Machine Learning Summer School Organization Committee Member <strong><em>(June 2023)</em></strong>"
     },
     "machine_learning": {
-        "tr": "Yapay Öğrenme - DeepLearning.AI, Stanford Üniversitesi (Coursera)",
-        "en": "Machine Learning Specialization - DeepLearning.AI, Stanford University (Coursera)"
-    },
-    "feature_engineering_miuul": {
-        "tr": "Özellik Mühendisliği - Miuul",
-        "en": "Feature Engineering - Miuul"
+        "tr": "Yapay Öğrenme",
+        "en": "Machine Learning Specialization"
     },
     "agile_project_management_google": {
-        "tr": "Agile Proje Yönetimi - Google (Coursera)",
-        "en": "Agile Project Management - Google (Coursera)"
-    },
-    "bayoyo_machine_learning_summer_school": {
-        "tr": "BAYÖYO 2023: Bilim Akademisi - Sabancı Üniversitesi - İstanbul Teknik Üniversitesi Yapay Öğrenme Yaz Okulu",
-        "en": "BAYOYO 2023: Bilim Akademisi - Sabanci University - Istanbul Technical University Machine Learning Summer School"
+        "tr": "Agile Proje Yönetimi",
+        "en": "Agile Project Management"
     },
     "linux_for_developers": {
-        "tr": "Geliştiriciler İçin Linux - Linux Vakfı (Coursera)",
-        "en": "Linux For Developers - The Linux Foundation (Coursera)"
+        "tr": "Geliştiriciler İçin Linux",
+        "en": "Linux For Developers"
     },
     "parallel_programming_in_java": {
-        "tr": "Java ile Paralel Programlama - Rice Üniversitesi (Coursera)",
-        "en": "Parallel Programming in Java - Rice University (Coursera)"
+        "tr": "Java ile Paralel Programlama",
+        "en": "Parallel Programming in Java"
     }
 }

@@ -7,72 +7,64 @@
         "tr": "Kaynaklar",
         "en": "Sources"
     },
-    "numerical_methods": {
-        "tr": "Bilgisayar Mühendisliğinde Sayısal Yöntemler (BLG 202E)",
-        "en": "Numerical Methods in CE (BLG 202E)"
-    },
-    "operation_research": {
+    "or": {
         "tr": "Yöneylem Araştırması (BLG 368E)",
         "en": "Operations Research (BLG 368E)"
     },
-    "data_structures": {
-        "tr": "Veri Yapıları (BLG 223E)",
-        "en": "Data Structures (BLG 223E)"
+    "real": {
+        "tr": "Gerçek Zaman Sistemleri Yazılımı (BLG 450E)",
+        "en": "Real-Time Systems Software (BLG 450E)"
     },
-    "operating_systems": {
+    "comm": {
+        "tr": "Bilgisayar Haberleşmesi (BLG 433E)",
+        "en": "Computer Communications (BLG 433E)"
+    },    
+    "sec": {
+        "tr": "Bilgisayar Güvenliği (BLG 459E)",
+        "en": "Computer Security (BLG 459E)"
+    },
+    "os": {
         "tr": "Bilgisayar İşletim Sistemleri (BLG 312E)",
         "en": "Computer Operating Systems (BLG 312E)"
-    },
-    "comporg": {
-        "tr": "Bilgisayar Organizasyonu (BLG 222E)",
-        "en": "Computer Organization (BLG 222E)"
-    },
-    "signal": {
-        "tr": "Bilgisayar Mühendisleri için Sinyal ve Sistemler (BLG 354E)",
-        "en": "Signal and Systems for Computer Engineers (BLG 354E)"
     },
     "oop": {
         "tr": "Nesne Yönelimli Programlama (BLG 252E)",
         "en": "Object Oriented Programming (BLG 252E)"
     },
-    "algo1": {
-        "tr": "Algoritma Analizi I (BLG 335E)",
-        "en": "Analysis of Algorithms I (BLG 335E)"
-    },
-    "algo2": {
-        "tr": "Algoritma Analizi II (BLG 336E)",
-        "en": "Analysis of Algorithms II (BLG 336E)"
-    },
-    "database_systems": {
-        "tr": "Veri Tabanı Sistemleri (BLG 317E)",
-        "en": "Database Systems (BLG 317E)"
-    },
-    "linear_algebra": {
-        "tr": "Doğrusal Cebir ve Uygulamaları (MAT 281E)",
-        "en": "Linear Algebra and Applications (MAT 281E)"
-    },
-    "probability_statistics": {
-        "tr": "Olasılık ve İstatistik (MAT 271E)",
-        "en": "Probability and Statistics (MAT 271E)"
-    },
-    "learning_from_data": {
+    "lfd": {
         "tr": "Veriden Öğrenme (BLG 454E)",
         "en": "Learning From Data (BLG 454E)"
     },
-    "r&d_law": {
-        "tr": "AR-GE Hukuku (HUK 217)",
-        "en": "R&D Law (HUK 217)"
+    "softeng": {
+        "tr": "Yazılım Mühendisliği (BLG 411E)",
+        "en": "Software Engineering (BLG 411E)"
     },
     "all_course_materials": {
-        "tr": "Tüm Ders Materyalleri (2021 - 2025)",
-        "en": "All Course Materials (2021 - 2025)"
+        "tr": "Tüm Lisans Ders Materyalleri (2021 - 2025)",
+        "en": "All Undergraduate Course Materials (2021 - 2025)"
     },
-    "homework_exam_solutions_source_codes": {
-        "tr": "Materyallerin Kaynak Kodları (2021 - 2025)",
-        "en": "Source Codes for Course Materials (2021 - 2025)"
-    },
-    "blg_317e_database_systems_term_project": {
+    "blg_317e": {
         "tr": "BLG 317E Veri Tabanı Sistemleri Dönem Projesi (2023 Güz Dönemi)",
         "en": "BLG 317E Database Systems Term Project (2023 Fall Term)"
+    },
+    "blg_411e": {
+        "tr": "BLG 411E Yazılım Mühendisliği Dönem Projesi (2024 Güz Dönemi)",
+        "en": "BLG 411E Software Engineering Term Project (2024 Fall Term)"
+    },
+    "link": {
+        "tr": "Kullanışlı Bağlantılar",
+        "en": "Useful Links"
+    },    
+    "helper": {
+        "tr": "İTÜ Helper (Ders Ön Şart Görselleştirme)",
+        "en": "ITU Helper (Course Prerequisite Visualization)"
+    },    
+    "senlikci": {
+        "tr": "İTÜ Şenlikçi (Ders Programı Hazırlama Aracı)",
+        "en": "ITU Senlikci (Course Scheduling Tool)"
+    },    
+    "archive": {
+        "tr": "İTÜ Web Arşivi (Geçmiş Yılların Ders Programları)",
+        "en": "ITU Web Archive (Previous Years' Course Schedules)"
     }
 }
