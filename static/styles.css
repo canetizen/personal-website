@@ -826,6 +826,12 @@ progress {
   margin-left: 75%;
 }
 
+.site-footer {
+    background-color: #f8f9fa;
+    color: #6c757d;
+    font-size: 0.85rem;
+}
+
 .offset-10 {
   margin-left: 83.33333333%;
 }
