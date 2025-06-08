@@ -10943,11 +10943,18 @@ p.lead {
   margin-right: 0;
 }
 .social-icons .social-icon:hover {
-  background-color: #bd5d38;
+  background-color: #0066cc;
 }
 
 .dev-icons {
-  font-size: 3rem;
+  font-size: 2rem;
+  display: flex;
+  flex-wrap: wrap;         
+  justify-content: flex-start; 
+  gap: 1rem; 
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
 section.resume-section {
